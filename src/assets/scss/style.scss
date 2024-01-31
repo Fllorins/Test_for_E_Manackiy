@@ -46,11 +46,7 @@
     line-height: 140%;
   }
 }
-.switch-item:nth-child(1) {
-  // animation: ani 3s ease-in-out;
-}
 .switch-item:nth-child(2) {
-  // animation: ani 9s ease-in-out;
   height: 600px;
   background: $color-bg-card-hover;
   z-index: 2;
@@ -60,9 +56,6 @@
 }
 .switch-item:nth-child(2) .switch-item__btn {
   @include button;
-}
-.switch-item:nth-child(3) {
-  // animation: ani 12s ease-in-out;
 }
 .switch-item__up {
   padding: 36px 60px 0px;

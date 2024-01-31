@@ -29,7 +29,7 @@
   align-items: center;
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 25px;
   z-index: 3000;
 }
 
@@ -42,7 +42,7 @@
   width: 30px;
   height: 3px;
   margin: 6px auto;
-  // background: $color-title;
+  background: $color-text-base;
   transition: 0.2s;
 }
 .menu__item {
@@ -63,7 +63,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  // background: $color-bg-salat;
+  background: $color-bg-card-hover;
   z-index: 2500;
   transition: 0.3s;
 }

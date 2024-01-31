@@ -117,7 +117,7 @@ function forUsd() {
       item.querySelectorAll('.switch-item__price').forEach((i) => {
         i.querySelectorAll('.price-switch').forEach((mDay) => {
           let dayCash = 0;
-          dayCash = Math.ceil(mDay.getAttribute('data-value') / dol);
+          dayCash = Math.round(mDay.getAttribute('data-value') / dol) + 0.1;
           mDay.innerHTML = +dayCash;
         });
         i.querySelectorAll('.button-switch__btn').forEach((j) => {
@@ -140,31 +140,6 @@ function forRub() {
 }
 // animation
 
-// function set() {
-//   let timeSet = function (i) {
-//     setTimeout(function () {
-//       document.getElementById('hideBlock1').style.opacity = 1;
-//     }, 1000 * i);
-//   };
-//   for (i = 1; i <= 3; i++) {
-//     timeSet(i);
-//   }
-// }
-// function func() {
-//   convertAria.querySelectorAll('.switch-item').forEach((el) => {
-//     setTimeout(function () {
-//       el.style.opacity = '0';
-//     }, 1000 * i);
-//   });
-// }
-// window.addEventListener('load', () => {
-//   for (i = 1; i <= 3; i++) {
-//     func(i);
-//   }
-// });
-
-// setTimeout(function () {
-//   document.getElementById('hideBlock1').style.o
 const blocks = Array.from(convertAria.querySelectorAll('.switch-item'));
 
 function callBlock(i) {
